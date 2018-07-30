@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Video Controlls</h2>
+ <video src="videoplayback.mp4" autoplay controls id="video">
+
+ </video>
+<br>
+ <button type="button" name="button" onclick="play()">Play</button>
+ <button type="button" name="button" onclick="pause()">Pause</button>
+ <br>
+ <br>
+ <h2>Audio Controlls</h2>
+ <audio src="[iSongs.info] 03 - Pillaa Raa.mp3" audio controls id="audio" >
+ </audio>
+ <br>
+ <br>
+ <br>
+ <button type="button" name="button" onclick="play1()">Play</button>
+ <button type="button" name="button" onclick="pause1()">Pause</button>
+
+  </body>
+</html>
+
+
+<script type="text/javascript">
+  function play(){
+    var vid=document.getElementById('video');
+    vid.play();
+    }
+  function pause(){
+    var vid=document.getElementById('video');
+    vid.pause();
+    }
+  function play1(){
+    var aud=document.getElementById('audio');
+    aud.play();
+  }
+  function pause1(){
+    var aud=document.getElementById('audio');
+    aud.pause();
+  }
+</script>
